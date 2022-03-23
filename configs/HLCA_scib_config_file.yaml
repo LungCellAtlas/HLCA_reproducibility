@@ -1,0 +1,52 @@
+ROOT: ../results/integration_benchmarking/benchmarking_results
+r_env : scIB-R-integration
+py_env : scIB-python-2
+conv_env : scib-r-conv
+timing: false
+
+FEATURE_SELECTION:
+  hvg: 2000
+  full_feature: 6000
+
+SCALING:
+  - unscaled
+  - scaled
+
+METHODS: # method name : ouput type(s)
+  scanorama:
+    output_type:
+      - embed
+      - full
+  harmony:
+    R: true
+    output_type: embed
+  bbknn:
+    output_type: knn
+  scvi:
+    no_scale: true
+    output_type: embed
+  scanvi:
+    no_scale: true
+    output_type: embed
+    use_celltype: true
+  conos:
+    R: true
+    output_type: knn
+  seuratrpca:
+    R: true
+    output_type: full
+  combat:
+    output_type: full
+  fastmnn:
+    R: true
+    output_type:
+      - embed
+      - full
+
+DATA_SCENARIOS:
+  lung_atlas_fixed:
+    batch_key: dataset
+    label_key: scgen_labels
+    organism: human
+    assay: expression
+    file: ../../../data/HLCA_core_h5ads/benchmarking_atlas/Barb_Kras_Krop_Lafy_Meye_Mish_MishNew_Nawi_Seib_Teic_log1p_scGEN_INPUT_gene_filtered.h5ad

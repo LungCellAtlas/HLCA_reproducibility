@@ -1,0 +1,4 @@
+# folders to ignore when pushing to github:
+data/
+results/
+testdir/
