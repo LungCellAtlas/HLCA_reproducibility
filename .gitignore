@@ -1,4 +1,5 @@
 # folders to ignore when pushing to github:
 data/
 results/
-testdir/
+scripts/__pycache__
+notebooks/.ipynb_checkpoints/

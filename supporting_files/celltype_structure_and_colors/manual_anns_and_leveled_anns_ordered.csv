@@ -1,0 +1,59 @@
+,Level_1,Level_2,Level_3,Level_4,Level_5,ordering,colors
+Basal resting,Epithelial,Airway epithelium,Basal,Basal resting,4_Basal resting,3,#FFFF00
+Suprabasal,Epithelial,Airway epithelium,Basal,Suprabasal,4_Suprabasal,4,#1CE6FF
+Deuterosomal,Epithelial,Airway epithelium,Multiciliated lineage,Deuterosomal,4_Deuterosomal,13,#FF34FF
+Multiciliated (nasal),Epithelial,Airway epithelium,Multiciliated lineage,Multiciliated,Multiciliated (nasal),15,#FF4A46
+Multiciliated (non-nasal),Epithelial,Airway epithelium,Multiciliated lineage,Multiciliated,Multiciliated (non-nasal),16,#008941
+Club (non-nasal),Epithelial,Airway epithelium,Secretory,Club,Club (non-nasal),20,#006FA6
+Club (nasal),Epithelial,Airway epithelium,Secretory,Club,Club (nasal),21,#A30059
+Goblet (nasal),Epithelial,Airway epithelium,Secretory,Goblet,Goblet (nasal),23,#FFDBE5
+Goblet (bronchial),Epithelial,Airway epithelium,Secretory,Goblet,Goblet (bronchial),24,#7A4900
+Goblet (subsegmental),Epithelial,Airway epithelium,Secretory,Goblet,Goblet (subsegmental),25,#0000A6
+Transitional Club-AT2,Epithelial,Airway epithelium,Secretory,Transitional Club-AT2,4_Transitional Club-AT2,26,#63FFAC
+Ionocyte,Epithelial,Airway epithelium,Rare,Ionocyte,4_Ionocyte,28,#B79762
+Tuft,Epithelial,Airway epithelium,Rare,Tuft,4_Tuft,29,#004D43
+Neuroendocrine,Epithelial,Airway epithelium,Rare,Neuroendocrine,4_Neuroendocrine,30,#8FB0FF
+SMG serous (nasal),Epithelial,Submucosal Gland,Submucosal Secretory,SMG serous,SMG serous (nasal),36,#997D87
+SMG serous (bronchial),Epithelial,Submucosal Gland,Submucosal Secretory,SMG serous,SMG serous (bronchial),37,#5A0007
+SMG mucous,Epithelial,Submucosal Gland,Submucosal Secretory,SMG mucous,4_SMG mucous,38,#809693
+SMG duct,Epithelial,Submucosal Gland,Submucosal Secretory,SMG duct,4_SMG duct,43,#6A3A4C
+AT1,Epithelial,Alveolar epithelium,AT1,3_AT1,3_AT1,45,#1B4400
+AT2,Epithelial,Alveolar epithelium,AT2,3_AT2,3_AT2,46,#4FC601
+AT2 proliferating,Epithelial,Alveolar epithelium,AT2,AT2 proliferating,4_AT2 proliferating,51,#3B5DFF
+EC arterial,Endothelial,Blood vessels,EC arterial,3_EC arterial,3_EC arterial,54,#4A3B53
+EC aerocyte capillary,Endothelial,Blood vessels,EC capillary,EC aerocyte capillary,4_EC aerocyte capillary,58,#FF2F80
+EC general capillary,Endothelial,Blood vessels,EC capillary,EC general capillary,4_EC general capillary,59,#61615A
+EC venous systemic,Endothelial,Blood vessels,EC venous,EC venous systemic,4_EC venous systemic,63,#BA0900
+EC venous pulmonary,Endothelial,Blood vessels,EC venous,EC venous pulmonary,4_EC venous pulmonary,64,#6B7900
+Lymphatic EC mature,Endothelial,Lymphatic EC,Lymphatic EC mature,3_Lymphatic EC mature,3_Lymphatic EC mature,68,#00C2A0
+Lymphatic EC proliferating,Endothelial,Lymphatic EC,Lymphatic EC proliferating,3_Lymphatic EC proliferating,3_Lymphatic EC proliferating,69,#FFAA92
+Lymphatic EC differentiating,Endothelial,Lymphatic EC,Lymphatic EC differentiating,3_Lymphatic EC differentiating,3_Lymphatic EC differentiating,70,#FF90C9
+Peribronchial fibroblasts,Stroma,Fibroblast lineage,Fibroblasts,Peribronchial fibroblasts,4_Peribronchial fibroblasts,74,#B903AA
+Adventitial fibroblasts,Stroma,Fibroblast lineage,Fibroblasts,Adventitial fibroblasts,4_Adventitial fibroblasts,75,#D16100
+Alveolar fibroblasts,Stroma,Fibroblast lineage,Fibroblasts,Alveolar fibroblasts,4_Alveolar fibroblasts,76,#DDEFFF
+Pericytes,Stroma,Fibroblast lineage,Fibroblasts,Pericytes,4_Pericytes,78,#000035
+Subpleural fibroblasts,Stroma,Fibroblast lineage,Fibroblasts,Subpleural fibroblasts,4_Subpleural fibroblasts,81,#7B4F4B
+Myofibroblasts,Stroma,Fibroblast lineage,Myofibroblasts,3_Myofibroblasts,3_Myofibroblasts,83,#A1C299
+Smooth muscle,Stroma,Smooth muscle,2_Smooth muscle,2_Smooth muscle,2_Smooth muscle,86,#300018
+Fibromyocytes,Stroma,Smooth muscle,Fibromyocytes,3_Fibromyocytes,3_Fibromyocytes,89,#0AA6D8
+SM activated stress response,Stroma,Smooth muscle,SM activated stress response,3_SM activated stress response,3_SM activated stress response,92,#013349
+Mesothelium,Stroma,Mesothelium,2_Mesothelium,2_Mesothelium,2_Mesothelium,93,#00846F
+B cells,Immune,Lymphoid,B cell lineage,B cells,4_B cells,99,#372101
+Plasma cells,Immune,Lymphoid,B cell lineage,Plasma cells,4_Plasma cells,102,#FFB500
+CD4 T cells,Immune,Lymphoid,T cell lineage,CD4 T cells,4_CD4 T cells,105,#C2FFED
+CD8 T cells,Immune,Lymphoid,T cell lineage,CD8 T cells,4_CD8 T cells,110,#A079BF
+T cells proliferating,Immune,Lymphoid,T cell lineage,T cells proliferating,4_T cells proliferating,117,#CC0744
+NK cells,Immune,Lymphoid,Innate lymphoid cell NK,NK cells,4_NK cells,120,#C0B9B2
+DC1,Immune,Myeloid,Dendritic cells,DC1,4_DC1,128,#C2FF99
+DC2,Immune,Myeloid,Dendritic cells,DC2,4_DC2,129,#001E09
+Migratory DCs,Immune,Myeloid,Dendritic cells,Migratory DCs,4_Migratory DCs,130,#00489C
+Plasmacytoid DCs,Immune,Myeloid,Dendritic cells,Plasmacytoid DCs,4_Plasmacytoid DCs,131,#6F0062
+Alveolar macrophages,Immune,Myeloid,Macrophages,Alveolar macrophages,4_Alveolar macrophages,137,#0CBD66
+Alveolar Mφ CCL3+,Immune,Myeloid,Macrophages,Alveolar macrophages,Alveolar Mφ CCL3+,140,#EEC3FF
+Alveolar Mφ MT-positive,Immune,Myeloid,Macrophages,Alveolar macrophages,Alveolar Mφ MT-positive,141,#456D75
+Alveolar Mφ proliferating,Immune,Myeloid,Macrophages,Alveolar macrophages,Alveolar Mφ proliferating,142,#B77B68
+Monocyte-derived Mφ,Immune,Myeloid,Macrophages,Interstitial macrophages,Monocyte-derived Mφ,145,#7A87A1
+Interstitial Mφ perivascular,Immune,Myeloid,Macrophages,Interstitial macrophages,Interstitial Mφ perivascular,149,#788D66
+Classical monocytes,Immune,Myeloid,Monocytes,Classical monocytes,4_Classical monocytes,154,#885578
+Non-classical monocytes,Immune,Myeloid,Monocytes,Non-classical monocytes,4_Non-classical monocytes,157,#FAD09F
+Mast cells,Immune,Myeloid,Mast cells,3_Mast cells,3_Mast cells,159,#FF8A9A
