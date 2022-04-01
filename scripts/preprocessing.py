@@ -378,6 +378,25 @@ def age_converter(age, age_range, verbose=False):
     else:
         return age
 
+
+def generate_r2python_gene_mapping(r_genes, python_genes):
+    """function to map genes from r (that replaces "-" with ".") to python genes.
+    Returns dictionary with mapping."""
+    r2python_gene_mapping = dict()
+    for gene in r_genes:
+        if gene in python_genes:
+            r2python_gene_mapping[gene] = gene
+        elif "-".join(gene.rsplit(".", 1)) in python_genes:
+            r2python_gene_mapping[gene] = "-".join(gene.rsplit(".", 1))
+        elif "-".join(gene.split(".", 1)) in python_genes:
+            r2python_gene_mapping[gene] = "-".join(gene.split(".", 1))
+        elif "-".join(gene.split(".")) in python_genes:
+            r2python_gene_mapping[gene] = "-".join(gene.split("."))
+        else:
+            print("no equivalent found for this gene:", gene)
+    return r2python_gene_mapping
+
+
 # HELPER FUNCTIONS
 
 
@@ -408,3 +427,4 @@ def rreplace(s, old, new, occurrence, only_if_not_followed_by=None):
             return s
     li = s.rsplit(old, occurrence)
     return new.join(li)
+
