@@ -4,6 +4,7 @@ Version info:
 - BiocParallel: 1.26.2
 - edgeR: 3.34.0
 - plyr: 1.8.6
-- variancePartition: 1.22.0
+- variancePartition: 1.22.0<br><br>
+GSEA - folder that contains scripts and environment information for the gene set enrichment analysis that was done for covariate modeling. It includes extra figures and analyses that were not included in the paper.
 
 
