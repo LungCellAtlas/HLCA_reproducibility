@@ -1,5 +1,6 @@
 # folders to ignore when pushing to github:
 data/
+data_GWAS_non_public/
 results/
 scripts/__pycache__
 notebooks/.ipynb_checkpoints/
