@@ -6,3 +6,6 @@ scripts/__pycache__
 notebooks/.ipynb_checkpoints/
 notebooks/1_building_and_annotating_the_atlas_core/.ipynb_checkpoints/
 notebooks/2_modeling_of_covariates_and_GWAS_analysis/.ipynb_checkpoints/
+notebooks/3_atlas_extension/.ipynb_checkpoints
+notebooks/3_atlas_extension/HLCA_extension_data_preprocessing/.ipynb_checkpoints
+
