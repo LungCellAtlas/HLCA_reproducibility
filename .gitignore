@@ -1,11 +1,8 @@
-# folders to ignore when pushing to github:
-data/
+# ignore data/results folders in root (so no trailing slash)
+/data
+/results
 data_GWAS_non_public/
-results/
 scripts/__pycache__
-notebooks/.ipynb_checkpoints/
-notebooks/1_building_and_annotating_the_atlas_core/.ipynb_checkpoints/
-notebooks/2_modeling_of_covariates_and_GWAS_analysis/.ipynb_checkpoints/
-notebooks/3_atlas_extension/.ipynb_checkpoints
-notebooks/3_atlas_extension/HLCA_extension_data_preprocessing/.ipynb_checkpoints
-
+# ignore checkpoints in all the repo
+# if some already tracked: git rm -r --cached <file>
+.ipynb_checkpoints
