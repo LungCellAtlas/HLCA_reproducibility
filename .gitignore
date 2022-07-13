@@ -1,8 +1,16 @@
-# ignore data/results folders in root (so no trailing slash)
+# ignore folders in root
+# this will also work for a symlink
 /data
 /results
+
+# ignore all instances if a folder
+**/archive/*
+
 data_GWAS_non_public/
 scripts/__pycache__
-# ignore checkpoints in all the repo
+
+# ignore file in all the repo
 # if some already tracked: git rm -r --cached <file>
 .ipynb_checkpoints
+None-requirements.txt
+.DS_Store
