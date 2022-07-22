@@ -17,7 +17,7 @@ def get_genes_to_keep(genes_to_keep_file_path):
         list of genes ids to keep
     """
     if pd.isnull(genes_to_keep_file_path):
-        genes_to_keep_file_path = "../references/Homo_sapiens_GRCh38_84_gene_ids_to_keep_cellrangerbased.txt" 
+        genes_to_keep_file_path = "../../supporting_files/gene_info/Homo_sapiens_GRCh38_84_gene_ids_to_keep_cellrangerbased.txt" 
     with open(
         genes_to_keep_file_path
     ) as file:

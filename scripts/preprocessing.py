@@ -396,6 +396,55 @@ def generate_r2python_gene_mapping(r_genes, python_genes):
             print("no equivalent found for this gene:", gene)
     return r2python_gene_mapping
 
+def metadata_match(adata_obs, sample_column, mdata_samples):
+    """
+    This function matches our observations to the per sample metadata.
+    """
+    temp = adata_obs[sample_column].cat.categories.tolist()
+    print("Number of samples in metadata:", len(mdata_samples.index.unique()))
+    print("Number of samples in anndata:", len(temp))
+    mdata_samples_lost = mdata_samples.loc[~mdata_samples.index.isin(temp),:] # missing
+    mdata_samples = mdata_samples.loc[mdata_samples.index.isin(temp),:] # just our subjects
+    mdata_samples = mdata_samples.loc[:,~mdata_samples.isna().all()] # eliminate empty columns
+    print(mdata_samples.shape)
+    # Now we create the big adata.obs
+    mdata = pd.DataFrame(index=adata_obs.index)
+    column_ids = [
+        "institute", "study_PI", "sample_ID", "subject_ID", "library_ID", "publication_ID",
+        "repository_ID", "subject_ID_published", "subject_developmental_state", "age_years",
+        "age_range", "sex", "ethnicity_1", "ethnicity_2", "ethnicity_free_text",
+        "smoking_status", "smoking_history", "bmi", "disease_lung_known", "disease_condition",
+        "subject_type", "cause_of_death", "sample_type", "anatomical_region_level1",
+        "anatomical_region_level2", "anatomical_region_level3", "protocol_tissue_dissociation",
+        "biological_unit", "library_platform", "strand_sequence", "cell_enrichment",
+        "library_construction_batch", "sequencing_platform", "reference_genome",
+        "reference_genome_ensembl_release", "reads_processing", "sample_collection_year",
+        "sample_collection_relative_timepoint", "disease_status", "treatment_status",
+        "sample_status", "sample_cultured", "cell_number_loaded",
+        "cell_viability_percentage", "comments"
+    ]
+    column_ids_missed = []
+    for i in column_ids:
+        mdata[i] = np.nan
+        if i in mdata_samples.columns:
+            mdata[i] = mdata_samples.loc[adata_obs[sample_column],i].tolist()
+        else:
+            column_ids_missed.append(i)
+    print("Missing columns:\n", "\n ".join(column_ids_missed))
+    mdata = mdata.loc[:,~mdata.isna().all()] # eliminate empty columns
+    print(mdata.shape)
+    print("Checking Difference between final and donor/sample medadata.")
+    for i in mdata_samples.columns:
+        if i in mdata.columns:
+            df = mdata_samples.loc[adata_obs[sample_column],i]; df.index = mdata.index
+            temp = mdata[i].compare(df).rename(columns = {"self": "final", "other": "donor-tab"})
+            if temp.shape[0] > 0:
+                print("===========", i); print(temp.head())
+    if mdata_samples_lost.shape[0]>0:
+        return mdata, mdata_samples_lost
+    else:
+        return mdata
+    
 
 # HELPER FUNCTIONS
 
