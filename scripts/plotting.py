@@ -461,10 +461,9 @@ def plot_subject_statistics(
         width=barwidth,
     )
     ax.set_xlim(left=0, right=1)
-    print(f"ethnicity {perc_annotated}% annotated")
-    # ax.set_xlabel("ethnicity")
+    print(f"Ethnicity {perc_annotated}% annotated")
     ax.set_ylabel("n subjects", fontsize=fontsize)
-    ax.set_xlabel("ethnicity", fontsize=fontsize)
+    ax.set_xlabel("Ethnicity", fontsize=fontsize)
     ax.tick_params("x", rotation=90, labelsize=fontsize, bottom=True)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
@@ -628,7 +627,7 @@ def plot_subject_and_sample_stats_incl_na(
         ax.set_ylabel("n subjects")
         ax.set_xlabel("Sex")
         ax.grid(False)
-        # FIGURE 4 ETHNICITY
+        # FIGURE 4 ANCESTRY
         fig_count += 1
         ax = fig.add_subplot(n_rows, n_cols, fig_count)
         ethns = data_by_subject.Ethnicity.copy()
@@ -654,7 +653,6 @@ def plot_subject_and_sample_stats_incl_na(
         )
         ax.set_xlim(left=0, right=1)
         print(f"ethnicity {perc_annotated}% annotated")
-        # ax.set_xlabel("ethnicity")
         ax.set_ylabel("n subjects")
         ax.set_xlabel("Ethnicity")
         ax.tick_params("x", rotation=90, bottom=True)

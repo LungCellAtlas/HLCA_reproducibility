@@ -8,4 +8,9 @@ notebooks/1_building_and_annotating_the_atlas_core/.ipynb_checkpoints/
 notebooks/2_modeling_of_covariates_and_GWAS_analysis/.ipynb_checkpoints/
 notebooks/3_atlas_extension/.ipynb_checkpoints
 notebooks/3_atlas_extension/HLCA_extension_data_preprocessing/.ipynb_checkpoints
+notebooks/3_atlas_extension/Untitled.ipynb
+notebooks/3_atlas_extension/scratch_pad.ipynb
+notebooks/1_building_and_annotating_the_atlas_core/scratch_pad_temp.ipynb
+scripts/bash/LDSC_GWAS_to_celltype/sbatch_ldsc_regr_*.out
+notebooks/2_downstream_analysis_of_HLCA_core/.ipynb_checkpoints
 

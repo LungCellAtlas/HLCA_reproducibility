@@ -230,8 +230,8 @@ def get_correlation_or_mi(cov1, cov2, obs_df, verbose=True):
             sqrt_frac_var_explained = np.sqrt(np.var(cov1_pred) / np.var(cov1_values))
             corrtype = "lin_regr"
             corrvalue = sqrt_frac_var_explained[
-                1
-            ]  # first entry specifies cov name, skip it
+                cov1_values.columns[0]
+            ]  
         elif len(set(cov2_values)) == 1:
             if verbose:
                 print(
@@ -244,9 +244,7 @@ def get_correlation_or_mi(cov1, cov2, obs_df, verbose=True):
             cov2_pred = lrf.predict(cov1_values)
             sqrt_frac_var_explained = np.sqrt(np.var(cov2_pred) / np.var(cov2_values))
             corrtype = "lin_regr"
-            corrvalue = sqrt_frac_var_explained[
-                1
-            ]  # first entry specifies cov name, skip it
+            corrvalue = sqrt_frac_var_explained[cov2_values.columns[0]]  
         else:
             # mutual info
             if verbose:

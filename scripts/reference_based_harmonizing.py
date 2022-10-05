@@ -364,9 +364,19 @@ def create_orig_ann_to_consensus_translation_df(
     return translation_df
 
 def consensus_annotate_anndata(
-    adata, translation_df, verbose=True, max_ann_level=5, ontology_type="cell_type"
+    adata, translation_df, verbose=True, max_ann_level=5, ontology_type="cell_type", 
 ):
-    """annotates cells in adata with consensus annotation. Returns adata."""
+    """annotates cells in adata with consensus annotation. Returns adata.
+    
+    Arguments:
+    adata - AnnData object containing the original (non-consensus) annotations
+    translation_df - pandas DataFrame obtained from create_consensus_table 
+        function.
+    verbose - Boolean
+    max_ann_level - integer, maximum annotation level in the translation_df
+    ontology_type - <"cell_type", "anatomical_region_coarse", 
+        "anatomical_region_fine"> type of annotation to harmonize
+    """
     # list the studies of interest. This name should correspond to the
     # study name in the anndata object, 'study' column.
     # get name of adata.obs column with original annotations:
@@ -389,7 +399,7 @@ def consensus_annotate_anndata(
     col_to_copy = col_to_copy + ["highest_res", "new"]
     # add prefix for in adata.obs:
     prefixes = {
-        "cell_type": "ann_",
+        "cell_type": "original_ann_",
         "anatomical_region_coarse": "region_coarse_",
         "anatomical_region_fine": "region_fine_",
     }
@@ -495,14 +505,28 @@ def merge_coarse_and_fine_anatomical_ontology_anns(
         del adata.obs["region_fine_new"]
     return adata
 
-def add_clean_annotation(adata, max_level=5):
+def add_clean_annotation(adata, input_ann_type=None, max_level=5):
     """converts ann_level_[annotation level] to annotation without label
     propagation from lower levels. I.e. in level 2, we will not have 1_Epithelial
     anymore; instead cells without level 2 annotations will have annotation None.
     Returns adata with extra annotation levels.
+    
+    Arguments:
+    adata - anndata object with non-clean annotations
+    input_ann_type - <"original","final"> whether to clean original harmonized
+       annotations (i.e. under "original_ann_level_[1-max_level], or final 
+       (HLCA-team manual) annotations (i.e. under "ann_level_[1-max_level]").
     """
+    if pd.isnull(input_ann_type):
+        raise ValueError("input_ann_type should be set either to 'original' or to 'final'.")
+    elif input_ann_type == "original":
+        prefix = "original_ann_level_"
+    elif input_ann_type == "final":
+        prefix = "ann_level_"
+    else:
+        raise ValueError("input_ann_type should be set either to 'original' or to 'final'.")
     for level in range(1, max_level + 1):
-        level_name = "ann_level_" + str(level)
+        level_name = prefix + str(level)
         anns = sorted(set(adata.obs[level_name]))
         ann2pureann = dict(zip(anns, anns))
         for ann_name in ann2pureann.keys():

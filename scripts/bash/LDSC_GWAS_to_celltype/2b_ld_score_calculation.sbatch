@@ -13,8 +13,9 @@
 #SBATCH -J LISA
 #SBATCH -p cpu_p
 #SBATCH -c 1
-#SBATCH --mem 2G
-#SBATCH --time 04:30:00
+#SBATCH --mem 2G #2
+#SBATCH --constraint="Lustre_File_System"
+#SBATCH --time 6:30:00
 #SBATCH --nice=10000
 ct_name=$1
 chr=$2
