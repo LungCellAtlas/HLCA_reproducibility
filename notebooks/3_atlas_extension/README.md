@@ -2,7 +2,7 @@
 
 This folder has all notebooks related to the HLCA extension (i.e. mapping of (disease) datasets onto the HLCA core), plus downstream analyses.
 
-Below, we will list which figures and tables from the paper are generated in these notebooks.
+Below, we list which figures and tables from the paper are generated in these notebooks.
 
 Main figures:<br>
 5a-b: 06_Meyer_2021_label_transfer_analysis<br>

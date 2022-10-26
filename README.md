@@ -5,7 +5,7 @@ This repository contains the code that was used for the Human Lung Cell Atlas pr
 You can find the main code used in the HLCA project in the [notebooks](./notebooks) of this repository. We subdivided the notebooks into three main categories:
 - 1: building and annotating the atlas core  
 - 2: downstream analysis of the HLCA core  
-- 3: atlas extension
+- 3: atlas extension<br>
 The notebooks folder is organized based on these three categories, with every sub-folder containing the used code. Notebooks are numbered to clarify the order in which to run the notebooks.
 
 The data and results folders as used in the code are not included in this repository, as the size of the files is too large, but will be uploaded to figshare soon.
@@ -27,7 +27,7 @@ Main figures:<br>
 7: COMING SOON disease analysis Ciro<br>
 
 Extended Data figures:<br>
-ED1: scripts/R/integration_benchmark_plots/
+ED1: scripts/R/integration_benchmark_plots/<br>
 ED2-8: notebook folder 1<br>
 ED9-11: notebook folder 2<br>
 ED 12-14: notebook folder 3<br>
@@ -44,7 +44,7 @@ ED table 7-10: notebook folder 2<br>
 ED table 11: deconvolution analysis COMING SOON in scripts/R folder<br>
 ED table 12-13: notebook folder 3<br>
 ED table disease analysis: COMING SOON disease analysis Ciro<br>
-ED table X (marker gene selection parameters): notebook folder 
+ED table X (marker gene selection parameters): notebook folder 1<br>
 
 ## References:
 HLCA pre-print: [Sikkema et al., bioRxiv 2022](https://www.biorxiv.org/content/10.1101/2022.03.10.483747v1.full)
