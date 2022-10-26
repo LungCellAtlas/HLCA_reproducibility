@@ -37,7 +37,7 @@ Pericytes,Stroma,Fibroblast lineage,Fibroblasts,Pericytes,4_Pericytes,81,#A1C299
 Subpleural fibroblasts,Stroma,Fibroblast lineage,Fibroblasts,Subpleural fibroblasts,4_Subpleural fibroblasts,84,#300018
 Myofibroblasts,Stroma,Fibroblast lineage,Myofibroblasts,3_Myofibroblasts,3_Myofibroblasts,86,#0AA6D8
 Smooth muscle,Stroma,Smooth muscle,2_Smooth muscle,2_Smooth muscle,2_Smooth muscle,90,#013349
-Fibromyocytes,Stroma,Smooth muscle,Fibromyocytes,3_Fibromyocytes,3_Fibromyocytes,93,#00846F
+Smooth muscle FAM83D+,Stroma,Smooth muscle,Smooth muscle FAM83D+,3_Smooth muscle FAM83D+,3_Smooth muscle FAM83D+,93,#00846F
 SM activated stress response,Stroma,Smooth muscle,SM activated stress response,3_SM activated stress response,3_SM activated stress response,96,#372101
 Mesothelium,Stroma,Mesothelium,2_Mesothelium,2_Mesothelium,2_Mesothelium,97,#FFB500
 Hematopoietic stem cells,Immune,Hematopoietic stem cells,2_Hematopoietic stem cells,2_Hematopoietic stem cells,2_Hematopoietic stem cells,101,#C2FFED
