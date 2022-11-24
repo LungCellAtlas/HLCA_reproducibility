@@ -2,6 +2,7 @@
 
 import scanpy as sc
 import pandas as pd
+import os # TEMP FOR TESTING
 
 
 from collections import Counter
@@ -148,7 +149,7 @@ if __name__=='__main__':
     query_dataset = sys.argv[1]
     outpath = sys.argv[2]
     full_emb = sc.read_h5ad("../data/HLCA_extended/HLCA_extended/HLCA_extended_scarches_emb.h5ad")
-    ref = full_emb[full_emb.obs.HLCA_or_query == "HLCA", :].copy()
+    ref = full_emb[full_emb.obs.core_or_extension == "core", :].copy()
     cts_ordered = pd.read_csv(
         "../supporting_files/celltype_structure_and_colors/manual_anns_and_leveled_anns_ordered.csv", index_col=0
     )    

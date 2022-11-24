@@ -14,10 +14,13 @@ for fn in $file_names; do
 	ct_name=${fn%"$suffix_to_remove"}
 	echo "working on ${ct_name}"
 	for chr in $(seq 1 22); do 
+		outfile_name_expected="../../../results/LDSC_GWAS_to_celltype/annots/${ct_name}.${chr}.annot.gz"
+		if [ ! -f ${outfile_name_expected} ]; then # only go through iteration if file doesn't exist yet
 		# # test conditional:
 		# if [ $ct_name == "AT1" ] && [ $chr == 22 ]; then
 		# submit job using sbatch script
-		sbatch ./1b_annot_generation.sbatch ${ct_name} ${chr} ${wd}
+			sbatch ./1b_annot_generation.sbatch ${ct_name} ${chr} ${wd}
 		# fi
+		fi
 	done
 done

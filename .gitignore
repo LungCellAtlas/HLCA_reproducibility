@@ -1,11 +1,21 @@
 # folders to ignore when pushing to github:
+.ipynb_checkpoints/
 data/
 data_GWAS_non_public/
 results/
+supporting_files/celltype_reannotation/old_versions_gitignore/
+supporting_files/HLCA_author_overview.csv
+supporting_files/metadata_harmonization/old_versions_gitignore/
 scripts/__pycache__
 notebooks/.ipynb_checkpoints/
+notebooks/Author_info_parsing.ipynb
 notebooks/1_building_and_annotating_the_atlas_core/.ipynb_checkpoints/
 notebooks/2_modeling_of_covariates_and_GWAS_analysis/.ipynb_checkpoints/
 notebooks/3_atlas_extension/.ipynb_checkpoints
 notebooks/3_atlas_extension/HLCA_extension_data_preprocessing/.ipynb_checkpoints
+notebooks/3_atlas_extension/Untitled.ipynb
+notebooks/3_atlas_extension/scratch_pad.ipynb
+notebooks/1_building_and_annotating_the_atlas_core/scratch_pad_temp.ipynb
+scripts/bash/LDSC_GWAS_to_celltype/sbatch_ldsc_regr_*.out
+notebooks/2_downstream_analysis_of_HLCA_core/.ipynb_checkpoints
 

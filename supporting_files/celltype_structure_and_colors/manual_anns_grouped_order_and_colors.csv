@@ -2,7 +2,7 @@
 Basal,#FFFF00
 Multiciliated,#1CE6FF
 Secretory,#FF34FF
-Transitional Club-AT2,#FF4A46
+Transitional Club-AT2 cells,#FF4A46
 Ionocyte,#008941
 Tuft,#006FA6
 Neuroendocrine,#A30059
@@ -22,18 +22,19 @@ Pericytes,#4FC601
 Subpleural fibroblasts,#3B5DFF
 Myofibroblasts,#4A3B53
 Smooth muscle,#FF2F80
-Fibromyocytes,#61615A
+Smooth muscle FAM83D+,#61615A
 Mesothelium,#BA0900
-B cell,#6B7900
-Plasma cells,#00C2A0
-T cell lineage,#FFAA92
-Innate lymphoid cell NK,#FF90C9
-DC1,#B903AA
-DC2,#D16100
-Migratory DCs,#DDEFFF
-Plasmacytoid DCs,#000035
-Alveolar macrophages,#7B4F4B
-Monocyte-derived Mφ,#A1C299
-Interstitial Mφ perivascular,#300018
-Monocytes,#0AA6D8
-Mast cells,#013349
+Hematopoietic stem cells,#6B7900
+B cell,#00C2A0
+Plasma cells,#FFAA92
+T cell lineage,#FF90C9
+Innate lymphoid cell NK,#B903AA
+DC1,#D16100
+DC2,#DDEFFF
+Migratory DCs,#000035
+Plasmacytoid DCs,#7B4F4B
+Alveolar macrophages,#A1C299
+Monocyte-derived Mph,#300018
+Interstitial Mph perivascular,#0AA6D8
+Monocytes,#013349
+Mast cells,#00846F

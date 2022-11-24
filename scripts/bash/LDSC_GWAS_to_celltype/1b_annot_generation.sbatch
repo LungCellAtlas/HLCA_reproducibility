@@ -8,9 +8,10 @@
 #SBATCH -e sbatch_annot_%j.out
 #SBATCH -J LISA
 #SBATCH -p cpu_p
+#SBATCH --constraint="Lustre_File_System"
 #SBATCH -c 1
 #SBATCH --mem 6G
-#SBATCH --time 00:40:00
+#SBATCH --time 0:40:00
 #SBATCH --nice=10000
 ct_name=$1
 chr=$2

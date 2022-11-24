@@ -365,7 +365,7 @@ def plot_subject_statistics(
         {
             "age": "first",
             "BMI": "first",
-            "ethnicity": "first",
+            "ancestry": "first",
             "sex": "first",
             "smoking_status": "first",
         }
@@ -442,10 +442,10 @@ def plot_subject_statistics(
     ax.set_ylabel("n subjects", fontsize=fontsize)
     ax.set_xlabel("sex", fontsize=fontsize)
     ax.grid(False)
-    # FIGURE 4 ETHNICITY
+    # FIGURE 4 ANCESTRY
     fig_count += 1
     ax = fig.add_subplot(gs[-6:, 3:-4])
-    ethns = data_by_subject.ethnicity.copy()
+    ethns = data_by_subject.ancestry.copy()
     perc_annotated = int(
         np.round(
             100 - sum([e == "nan" or pd.isnull(e) for e in ethns]) / len(ethns) * 100, 0
@@ -461,10 +461,9 @@ def plot_subject_statistics(
         width=barwidth,
     )
     ax.set_xlim(left=0, right=1)
-    print(f"ethnicity {perc_annotated}% annotated")
-    # ax.set_xlabel("ethnicity")
+    print(f"Ancestry {perc_annotated}% annotated")
     ax.set_ylabel("n subjects", fontsize=fontsize)
-    ax.set_xlabel("ethnicity", fontsize=fontsize)
+    ax.set_xlabel("Ancestry", fontsize=fontsize)
     ax.tick_params("x", rotation=90, labelsize=fontsize, bottom=True)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
@@ -525,7 +524,7 @@ def plot_subject_and_sample_stats_incl_na(
             {
                 "age": "first",
                 "BMI": "first",
-                "ethnicity": "first",
+                "ancestry": "first",
                 "sex": "first",
                 "smoking_status": "first",
             }
@@ -533,6 +532,9 @@ def plot_subject_and_sample_stats_incl_na(
         data_by_subject.columns = [
             col.capitalize() if col != "BMI" else col for col in data_by_subject.columns
         ]
+        for col in data_by_subject.columns:
+            # so that "NA" can be added without having to add new category
+            data_by_subject[col] = data_by_subject[col].tolist()
         data_by_subject.fillna("NA", inplace=True)
         data_by_subject.replace("nan", "NA", inplace=True)
         data_by_subject.replace("None", "NA", inplace=True)
@@ -628,10 +630,10 @@ def plot_subject_and_sample_stats_incl_na(
         ax.set_ylabel("n subjects")
         ax.set_xlabel("Sex")
         ax.grid(False)
-        # FIGURE 4 ETHNICITY
+        # FIGURE 4 ANCESTRY
         fig_count += 1
         ax = fig.add_subplot(n_rows, n_cols, fig_count)
-        ethns = data_by_subject.Ethnicity.copy()
+        ethns = data_by_subject.Ancestry.copy()
         n_subjects_unannotated = (ethns == "NA").sum()
         perc_annotated = int(
             np.round(100 - n_subjects_unannotated / len(ethns) * 100, 0)
@@ -653,10 +655,9 @@ def plot_subject_and_sample_stats_incl_na(
             color=(len(ethn_freqs) - 1) * ["black"] + [na_color],
         )
         ax.set_xlim(left=0, right=1)
-        print(f"ethnicity {perc_annotated}% annotated")
-        # ax.set_xlabel("ethnicity")
+        print(f"ancestry {perc_annotated}% annotated")
         ax.set_ylabel("n subjects")
-        ax.set_xlabel("Ethnicity")
+        ax.set_xlabel("Ancestry")
         ax.tick_params("x", rotation=90, bottom=True)
         ax.tick_params("y", left=True)
         ax.grid(False)

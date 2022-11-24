@@ -23,5 +23,6 @@ for fn in $file_names; do
 			# submit job using sbatch script
 			sbatch ./2b_ld_score_calculation.sbatch ${ct_name} ${chr} ${wd}
 		fi
+		# fi # only if test condition above is included
 	done
 done

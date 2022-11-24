@@ -397,6 +397,35 @@ def generate_r2python_gene_mapping(r_genes, python_genes):
     return r2python_gene_mapping
 
 
+
+def update_adata(adata, cov1, cov2, mapping):
+    """
+    Updates anndata obs column based on mapping from one column to the 
+    other. 
+
+    Arguments:
+    adata - AnnData to update
+    cov1 - column name of covariate to map from
+    cov2 - column name of covariate to map to
+    mapping - dictionary with mapping from covariate 1 to covariate 2
+
+    Returns:
+    adata with updated adata.obs[cov2]
+    """
+    cov1_in_data = adata.obs[cov1].unique()
+    for cat in mapping.keys():
+        if cat not in cov1_in_data:
+            raise ValueError(f"{cat} not a category of {cov1} in your data.")
+    cov2_updates = adata.obs[cov1].map(mapping).dropna()
+    # set cov2 column to list so that we can add new categories if necessary
+    adata.obs[cov2] = adata.obs[cov2].tolist()
+    adata.obs.loc[cov2_updates.index, cov2] = cov2_updates.values
+    # make into category again
+    adata.obs[cov2] = pd.Categorical(adata.obs[cov2])
+    # and return updated anndata
+    return adata
+
+
 # HELPER FUNCTIONS
 
 
