@@ -46,6 +46,9 @@ ED table 12-13: notebook folder 3<br>
 ED table disease analysis: COMING SOON disease analysis Ciro<br>
 ED table X (marker gene selection parameters): notebook folder 1<br>
 
+### Custom generation of cell type signature matrices for deconvolution
+To generate custom cell type signature matrices for deconvolution of bulk samples, use the [deconvolution notebook](./notebooks/2_downstream_analysis_of_HLCA_core/7_cell_type_gene_signature_generation_for_bulk_deconvolution.ipynb)  also used for the deconvolution done in the HLCA paper.
+
 ## References:
 HLCA pre-print: [Sikkema et al., bioRxiv 2022](https://www.biorxiv.org/content/10.1101/2022.03.10.483747v1.full)
 
