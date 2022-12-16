@@ -3,6 +3,7 @@
 data/
 data_GWAS_non_public/
 results/
+results.zip
 supporting_files/celltype_reannotation/old_versions_gitignore/
 supporting_files/HLCA_author_overview.csv
 supporting_files/metadata_harmonization/old_versions_gitignore/

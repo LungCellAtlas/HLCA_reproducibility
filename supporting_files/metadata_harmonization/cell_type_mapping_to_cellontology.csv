@@ -1,0 +1,62 @@
+HLCA,Uberon,,,,CellCards,,Martijn
+AT0,epithelial cell of alveolus of lung,CL_0010003,,,-,,lacking in CellCards  
+AT1,type I pneumocyte,,,,Alveolar type 1 (AT1) cells,,ok
+AT2,type II pneumocyte,,,,Alveolar type 2 (AT2) cells,,ok
+AT2 proliferating,type II pneumocyte,,,,Alveolar type 2 (AT2) cells,,ok
+Adventitial fibroblasts,alveolar type 2 fibroblast cell,,,,Alveolar fibroblast 2 (AF2) cells,,ok
+Alveolar Mph CCL3+,alveolar macrophage,,,,Alveolar macrophages (AMs).,,ok
+Alveolar Mph MT-positive,alveolar macrophage,,,,Alveolar macrophages (AMs).,,ok
+Alveolar Mph proliferating,alveolar macrophage,,,,Alveolar macrophages (AMs).,,ok
+Alveolar fibroblasts,alveolar type 1 fibroblast cell,,,,Alveolar fibroblast 1 (AF1) cells,,ok
+Alveolar macrophages,alveolar macrophage,,,,Alveolar macrophages (AMs).,,ok
+B cells,B cell,,,,B cells,,ok
+Basal resting,respiratory basal cell,,,,Basal cells,,ok
+CD4 T cells,"CD4-positive, alpha-beta T cell",,,,T cells,,ok
+CD8 T cells,"CD8-positive, alpha-beta T cell",,,,T cells,,ok
+Classical monocytes,classical monocyte,,,,Inflammatory monocytes (iMONs) ,,ok
+Club (nasal),club cell,,,,Secretory cells,,ok
+Club (non-nasal),club cell,,,,Secretory cells,,ok
+DC1,conventional dendritic cell,,,,Dendritic cells (DCs),,ok
+DC2,CD1c-positive myeloid dendritic cell,,,,Dendritic cells (DCs),,ok
+Deuterosomal,multi-ciliated epithelial cell,,,,Ciliated cells,,ok
+EC aerocyte capillary,capillary endothelial cell,alveolar capillary type 2 endothelial cell,"--> these aren't available yet in cellxgene version of cell ontology, consider updating later. coarsified for now",,Capillary 2 (CAP2) cells,,ok
+EC arterial,pulmonary artery endothelial cell,,,,Arterial endothelial cells,,ok
+EC general capillary,capillary endothelial cell,alveolar capillary type 1 endothelial cell,"--> these aren't available yet in cellxgene version of cell ontology, consider updating later. coarsified for now",,Capillary 1 (CAP1) cells,,ok
+EC venous pulmonary,vein endothelial cell,,,,Venous endothelial cells,,ok
+EC venous systemic,vein endothelial cell,,,,Venous endothelial cells,,ok
+Smooth muscle FAM83D+,stromal cell,https://www.ebi.ac.uk/ols/ontologies/cl/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000499,,,-,,lacking in CellCards and Uberon? Can we make a strong case for this cell?
+Goblet (bronchial),bronchial goblet cell,bronchial goblet cell (CL_1000312),,,Goblet cells,,ok
+Goblet (nasal),nasal mucosa goblet cell,nasal mucosa goblet cell (CL_0002480),,,Goblet cells,,ok
+Goblet (subsegmental),tracheobronchial goblet cell,tracheobronchial goblet cells (CL_0019003),,,Goblet cells,,ok
+Hematopoietic stem cells,hematopoietic stem cell,,,,-,,lacking in Cell Cards
+Hillock-like,respiratory hillock cell,,,,Basal cells,,lacking in Cell Cards
+Interstitial Mph perivascular,lung macrophage,,,,Interstitial macrophages (IMs),,ok
+Ionocyte,ionocyte,,,,Ionocytes,,ok
+Lymphatic EC differentiating,endothelial cell of lymphatic vessel,,,,Lymphatic endothelial cells,,ok
+Lymphatic EC mature,endothelial cell of lymphatic vessel,,,,Lymphatic endothelial cells,,ok
+Lymphatic EC proliferating,endothelial cell of lymphatic vessel,,,,Lymphatic endothelial cells,,ok
+Mast cells,mast cell,,,,Mast cells,,ok
+Mesothelium,mesothelial cell,,,,Mesothelial cells,,ok
+Migratory DCs,dendritic cell,,,,Dendritic cells (DCs),,ok
+Monocyte-derived Mph,elicited macrophage,,,,Interstitial macrophages (IMs),,ok
+Multiciliated (nasal),multi-ciliated epithelial cell,,,,Ciliated cells,,ok
+Multiciliated (non-nasal),ciliated columnar cell of tracheobronchial tree,,,,Ciliated cells,,ok
+Myofibroblasts,myofibroblast cell,,,,Secondary Crest Myofibroblasts (SCMF),,ok
+NK cells,natural killer cell,,,,Natural Killer cells (NK cells),,ok
+Neuroendocrine,lung neuroendocrine cell,,,,Pulmonary neuroendocrine cells (PNECs),,ok
+Non-classical monocytes,non-classical monocyte,,,,Patrolling monocytes (pMONs),,ok
+Peribronchial fibroblasts,bronchus fibroblast of lung,,,,-,,"CellCards does not have any non-alveolar fibroblasts, so lacking there"
+Pericytes,lung pericyte,,,,Pericytes,,ok
+Plasma cells,plasma cell,,,,B cells,,CellCards has low resolution in immune cells
+Plasmacytoid DCs,plasmacytoid dendritic cell,,,,Dendritic cells (DCs),,ok
+pre-TB secretory,epithelial cell of lower respiratory tract,CL_0002632,,,-,,Not present in CellCards
+SM activated stress response,smooth muscle cell,,,,Airway smooth muscle cells (ASMCs),,ok
+SMG duct,acinar cell,acinar cell (CL0000622),,,Terminal ciliated duct basal cells,,Unsure about the CellCards
+SMG mucous,mucus secreting cell,mucus secreting cell (CL_0000319),,,Mucous cells,,ok
+SMG serous (bronchial),tracheobronchial serous cell,tracheobronchial serous cell (CL_0019001),,,Serous cells,,ok
+SMG serous (nasal),serous secreting cell,serous secreting cell (CL_0000313),,,Serous cells,,ok
+Smooth muscle,tracheobronchial smooth muscle cell,,,,Airway smooth muscle cells (ASMCs),,ok
+Subpleural fibroblasts,fibroblast,,,,-,,lacking again from CellCards
+Suprabasal,respiratory basal cell,,,,Basal cells,,ok
+T cells proliferating,T cell,,,,T cells,,ok
+Tuft,brush cell of trachebronchial tree,brush cells of the tracheobronchial tree (CL_0002075),,,Tuft cells,,ok
