@@ -13,4 +13,4 @@ ED 8: 12_figure_3_HLCA_overview<br>
 
 Extended Data tables:<br>
 ED table 6 (marker genes): 09_marker_calculation<br>
-ED table X (marker gene calculation parameters): manually generated based on 09_marker_calculation<br>
+ED table 16 (marker gene calculation parameters): manually generated based on 09_marker_calculation<br>

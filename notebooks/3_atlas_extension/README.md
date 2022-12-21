@@ -22,8 +22,12 @@ ED 19: 10_disease_uncertainty_breakdown_and_migr_dc_detection<br>
 ED 20: 03_extended_atlas_analysis_label_transfer_and_uncertainty<br>
 ED 21: 10_disease_uncertainty_breakdown_and_migr_dc_detection<br>
 ED 22: 03_extended_atlas_analysis_label_transfer_and_uncertainty<br>
+ED 23: XX_cross_study_IPF_analysis.ipynb and XX_multi_disease_MDM_analysis.ipynb<br> 
 
 Extended Data tables:<br>
 ED table 1-2: 11_generate_supp_tables_and_cleaned_up_source_data<br>
 ED table 4-5: 11_generate_supp_tables_and_cleaned_up_source_data<br>
 ED table 12-13: 03_extended_atlas_analysis_label_transfer_and_uncertainty<br>
+ED table 14: XX_cross_study_IPF_analysis.ipynb<br>
+ED table 15: XX_multi_disease_MDM_analysis.ipynb<br>
+ED table 17: coming soon (to do @ciro)<br>
