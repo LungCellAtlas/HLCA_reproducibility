@@ -2,4 +2,4 @@ to download the results folder from the HLCA_reproducibility repository, run:
 wget --user iGJBCYX8sMPL4n8 --password HLCA_results https://hmgubox2.helmholtz-muenchen.de/public.php/webdav/results.zip -O results.zip
 
 The md5sum of the resulting file should be:
-e97dcaa76e0528930fbdd99071c8f44
+91d65b12ed8653d496e67c65c7b71e0c
