@@ -1,6 +1,6 @@
 # folders to ignore when pushing to github:
 .ipynb_checkpoints/
-data/
+data
 data_GWAS_non_public/
 results/
 results.zip
