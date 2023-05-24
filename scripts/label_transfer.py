@@ -97,7 +97,7 @@ def weighted_knn_transfer(
         raise ValueError(
             "query_adata_emb should be set to either 'X' or the name of the obsm layer to be used!"
         )
-    top_k_distances, top_k_indices = k_neighbors_transformer.kneighbors(X=query_emb)
+    top_k_distances, top_k_indices = knn_model.kneighbors(X=query_emb) #was before: .... = k_neighbors_transformer.kneighbors(X=query_emb)
 
     stds = np.std(top_k_distances, axis=1)
     stds = (2.0 / stds) ** 2
