@@ -1,0 +1,7 @@
+name: HLCA_idtrack
+dependencies:
+ - python=3.8
+ - scanpy
+ - pip
+ - pip:
+   - idtrack
