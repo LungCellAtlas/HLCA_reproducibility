@@ -57,7 +57,7 @@ S table 17: notebook folder 3<br>
 To generate custom cell type signature matrices for deconvolution of bulk samples, use the [deconvolution notebook](./notebooks/2_downstream_analysis_of_HLCA_core/11_EXAMPLE_NOTEBOOK_signature_matrix_generation_for_deconvolution.ipynb)  also used for the deconvolution done in the HLCA paper.
 
 ## References:
-HLCA pre-print: [Sikkema et al., bioRxiv 2022](https://www.biorxiv.org/content/10.1101/2022.03.10.483747v1.full)
+HLCA paper: [Sikkema et al., Nature Medicine 2023](https://www.nature.com/articles/s41591-023-02327-2)
 
 ## In cases of questions:
 Submit an issue to this repository.
