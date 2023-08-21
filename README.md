@@ -63,4 +63,4 @@ HLCA paper: [Sikkema et al., Nature Medicine 2023](https://www.nature.com/articl
 Submit an issue to this repository.
 
 ## Acknowledgements:
-We would like to thank Ciro Ramirez Suastegui (@cramsuig), Tessa Gillett (@TessaGillet), Daniel Strobl (@danielStrobl) and Luke Zappia (@lazappi) for important contributions to the code.
+We would like to thank Ciro Ramirez Suastegui (@cramsuig), Tessa Gillett (@TessaGillett), Daniel Strobl (@danielStrobl) and Luke Zappia (@lazappi) for important contributions to the code.
